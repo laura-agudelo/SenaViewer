@@ -2,22 +2,18 @@ package edu.misena.senaviewer.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book {
+public class Magazine {
     private int id;
     private String title;
     private String edititionDate;
     private String editorial;
     private List<String> authors;
-    private String isbn;
-    private boolean readed;
-    private int timeReaded;
 
     // Constructor
-    public Book(String title, String edititionDate, String editorial, String isbn) {
+    public Magazine(String title, String edititionDate, String editorial) {
         this.title = title;
         this.edititionDate = edititionDate;
         this.editorial = editorial;
-        this.isbn = isbn;
         this.authors = new ArrayList<>();
     }
 
@@ -36,14 +32,4 @@ public class Book {
 
     public List<String> getAuthors() { return authors; }
     public void setAuthors(List<String> authors) { this.authors = authors; }
-
-    public String getIsbn() { return isbn; }
-    public void setIsbn(String isbn) { this.isbn = isbn; }
-
-    public boolean isReaded() { return readed; }
-    public void setReaded(boolean readed) { this.readed = readed; }
-
-    public int getTimeReaded() { return timeReaded; }
-    public void setTimeReaded(int timeReaded) { this.timeReaded = timeReaded; }
-
 }
